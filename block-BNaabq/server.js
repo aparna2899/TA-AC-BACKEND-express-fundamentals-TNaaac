@@ -9,17 +9,13 @@ app.use(logger('dev'));
 app.use(cookieparser());
 
 app.use((req, res, next) => {
-  res.cookie('username', 'aparna');
-  next();
-});
-
-app.use((req, res, next) => {
   console.log(req.cookies);
   next();
 });
 
-app.use('/about', (req, res) => {
-  res.send('Hello!');
+app.use('/about', (req, res, next) => {
+  res.cookie('username', 'aparna');
+  res.end('Welcome to About Page!');
 });
 
 app.listen(3000, () => {
