@@ -1,0 +1,476 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom style*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+.background {
+  max-width: 100%;
+  filter: brightness(50%);
+}
+.icons {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.circle {
+  background-color: white;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  color: #444444;
+  margin: 0 5px;
+}
+.header {
+  position: absolute;
+  top: 120px;
+  left: 10%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+.logo strong {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ea513d;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+.menu a {
+  text-decoration: none;
+  color: #9f9f9f;
+  font-weight: 600;
+  padding: 0 15px;
+}
+.menu .orange {
+  color: #ea513d;
+}
+.home {
+  position: absolute;
+  top: 380px;
+  width: 100%;
+}
+.home h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.home hr {
+  width: 30%;
+}
+.home p {
+  text-align: center;
+  color: white;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.btn {
+  background-color: #ea513d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+}
+.btn-1 {
+  position: relative;
+  left: 45%;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+}
+.dot-1,
+.dot-2,
+.dot-3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #7f7f7f;
+  margin: 10px 5px;
+}
+.dot-1 {
+  background-color: black;
+}
+
+.container {
+  margin: 10%;
+  color: #444444;
+}
+h3 {
+  font-size: 26px;
+  color: #444444;
+  font-weight: bold;
+  text-align: center;
+}
+.container h4 {
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 5%;
+}
+.container hr {
+  margin-top: 0;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.service-icon {
+  width: 260px;
+  height: 280px;
+}
+.services hr {
+  width: 17%;
+}
+.service-icon-1 {
+  background-color: #5bbd9d;
+}
+.service-icon-2 {
+  background-color: #e57f30;
+}
+.service-icon-3 {
+  background-color: #3898da;
+}
+.service-icon-4 {
+  background-color: #68cd72;
+}
+.service-icon a {
+  color: white;
+  font-size: 45px;
+  display: inline-block;
+  width: 100%;
+  line-height: 280px;
+  text-align: center;
+}
+.portfolio hr {
+  width: 20%;
+}
+.portfolio img {
+  width: 270px;
+  padding-bottom: 30px;
+}
+.team hr {
+  width: 12%;
+}
+.members img {
+  width: 260px;
+  border-radius: 50%;
+  padding: 0 10px;
+}
+.italic {
+  font-style: italic;
+}
+.design-skills {
+  justify-content: space-between;
+  color: gray;
+}
+.contact hr {
+  width: 11%;
+}
+.design-skills-text,
+.contact-text {
+  width: 60%;
+}
+.skills-bar-chart,
+.details {
+  width: 40%;
+}
+.design-skills-text p {
+  text-align: left;
+  padding-right: 40px;
+}
+.PHOTOSHOP-bar {
+  width: 90%;
+}
+.HTML-CSS-bar {
+  width: 80%;
+}
+.DEVLOPMENT-bar {
+  width: 70%;
+}
+.MARKETING-bar {
+  width: 80%;
+}
+.bar {
+  background-color: #e7e7e7;
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+  width: 100%;
+}
+.bar span {
+  display: inline-block;
+  background-color: #ea513d;
+  padding: 8px;
+}
+.map {
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+.orange {
+  color: #ea513d;
+}
+.contact-text p {
+  padding-bottom: 15px;
+}
+.contact-text strong {
+  font-weight: bold;
+}
+#blue {
+  color: blue;
+}
+#green {
+  color: green;
+}
+.name,
+.email,
+.subject,
+.message {
+  height: 40px;
+  border: 1px solid lightgray;
+  color: #9f9f9f;
+  margin-bottom: 10px;
+  line-height: 40px;
+  padding-left: 10px;
+}
+.message {
+  height: 100px;
+}
+.btn-2 {
+  width: 100%;
+}
+.footer {
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.back-to-top {
+  background-color: #ea513d;
+  text-decoration: none;
+  color: white;
+  border-radius: 0;
+  padding: 0 40px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+/* Gallery Page */
+.main {
+  justify-content: left;
+}
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 25%;
+  background-color: #ea513d;
+  padding: 0 20px;
+  position: fixed;
+}
+.top {
+  justify-content: space-between;
+}
+.flex-logo img {
+  vertical-align: middle;
+}
+.top strong {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+#home {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  align-self: center;
+}
+.bottom h3 {
+  font-size: 26px;
+  color: white;
+  text-align: left;
+}
+.bottom p {
+  margin: 8px 0;
+  font-weight: 600;
+}
+.social-media-icons {
+  margin: 30px 0;
+}
+.circle-2 {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  color: white;
+  margin-right: 15px;
+}
+.gallery {
+  width: 75%;
+  position: relative;
+  left: 25%;
+}
+.gallery h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+.gallery-images {
+  justify-content: space-evenly;
+}
+.pic img {
+  width: 480px;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
